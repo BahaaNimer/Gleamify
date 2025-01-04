@@ -31,12 +31,12 @@ const CategoryIntro = ({
 				<span className='font-semibold'>
 					{subCategoryName}
 				</span>{' '}
-				category. Whether you're looking
+				{`category. Whether you're looking
 				for the latest trends, timeless
 				classics, or unique finds, we've
 				got something for everyone.
 				Browse through our collection of
-				high-quality{' '}
+				high-quality`}{' '}
 				{`${
 					isProductList
 						? ' Products'

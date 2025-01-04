@@ -1,6 +1,5 @@
 'use client';
 import { useState } from 'react';
-import subcategoriesProducts from '../../mocks/subcategoriesProducts.json';
 import { ProductCard } from '@/app/components/subCategories/productCard';
 import { useProductStore } from '@/app/lib/providers/products-store-provider';
 import { Result } from '@/app/utils/types/Result';

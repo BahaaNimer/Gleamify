@@ -1,11 +1,8 @@
-import { Category } from './Category';
 import { Price } from './Price';
-import { RatingsBreakdown } from './RatingsBreakdown';
-import { ReviewsPaginated } from './Review';
 
 export interface Result {
 	title: string;
-	optimizedDescription: any;
+	optimizedDescription?: string | null;
 	price?: Price;
 	url: string;
 	asin: string;

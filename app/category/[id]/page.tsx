@@ -30,7 +30,7 @@ const cachedCategories = cache(
 			return await fetchSupCategories(
 				categoryId
 			);
-		} catch (e: any) {
+		} catch (e: unknown) {
 			console.log(e);
 		}
 

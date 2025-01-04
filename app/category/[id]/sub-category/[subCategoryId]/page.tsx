@@ -29,7 +29,7 @@ const cachedProducts = cache(
 			return await fetchProducts(
 				categoryId
 			);
-		} catch (e: any) {
+		} catch (e: unknown) {
 			console.log(e);
 		}
 

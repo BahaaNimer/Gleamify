@@ -31,13 +31,8 @@ const cachedCategories = cache(
 			);
 
 			return data;
-		} catch (e: any) {
-			console.log(
-				e.response,
-				e.request,
-				e.message,
-				e
-			);
+		} catch (e: unknown) {
+			console.log(e);
 		}
 
 		return null;

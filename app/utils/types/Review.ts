@@ -1,7 +1,7 @@
 export interface Review {
 	id: string;
 	title: string;
-	imageUrls: any;
+	imageUrls: string[];
 	body: string;
 }
 

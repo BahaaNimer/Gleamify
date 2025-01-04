@@ -7,14 +7,14 @@ const LandingPageIntro = () => {
 				Welcome to Gleamify
 			</h1>
 			<p className='text-lg mb-6 px-8'>
-				Your one-stop destination for a
+				{`Your one-stop destination for a
 				wide range of high-quality
 				products! Whether you're
 				shopping for the latest fashion,
 				cutting-edge electronics, home
 				essentials, or unique gifts,
 				we've got something for
-				everyone.
+				everyone.`}
 			</p>
 			<p className='text-xl font-semibold px-7'>
 				Explore our carefully curated

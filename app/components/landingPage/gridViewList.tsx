@@ -15,21 +15,21 @@ const GridViewList = ({
 		categories.amazonProductSearchResults.productResults.results
 			.map((item) => item.categories)
 			.flat()
-			.filter((item: any) =>
+			.filter((item) =>
 				Boolean(item.id)
 			)
-			.filter((item: any) => {
+			.filter((item) => {
 				if (ids.has(item.id))
 					return false;
 				ids.add(item.id);
 				return true;
 			})
 			.filter(
-				(item: any) =>
+				(item) =>
 					item.subcategories?.length
 			)
 			.filter(
-				(item: any) =>
+				(item) =>
 					item.subcategories?.length > 0
 			);
 

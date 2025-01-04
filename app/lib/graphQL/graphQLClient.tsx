@@ -3,7 +3,7 @@ import { GraphQLClient } from 'graphql-request';
 const endpoint = process.env
 	.CANOPY_GRAPHQL_ENDPOINT as string;
 
-let graphQLClient = new GraphQLClient(
+const graphQLClient = new GraphQLClient(
 	endpoint,
 	{
 		headers: {

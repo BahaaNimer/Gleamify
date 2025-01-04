@@ -1,0 +1,16 @@
+{
+	"amazonProductCategory": {
+		"id": "7147445011",
+		"name": "Novelty & More",
+		"subcategories": [
+			{
+				"id": "12035955011",
+				"name": "Clothing"
+			},
+			{
+				"id": "5262066011",
+				"name": "Watches"
+			}
+		]
+	}
+}

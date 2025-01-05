@@ -24,7 +24,6 @@ export const createProductStore = (
 		(set) => ({
 			...initState,
 			setProduct: (product: Result) => {
-				console.log(product);
 				set((statue) => ({
 					...statue,
 					product: { ...product },

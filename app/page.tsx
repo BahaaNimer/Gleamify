@@ -1,3 +1,4 @@
+import React from 'react'
 import GridViewList from './components/landingPage/gridViewList';
 import graphQLClient from './lib/graphQL/graphQLClient';
 import categories from '@/app/mocks/tempCategories.json';
@@ -24,11 +25,6 @@ const cachedCategories = cache(
 
 			const data =
 				await fetchCategories();
-
-			console.log(
-				'returned from the query',
-				data
-			);
 
 			return data;
 		} catch (e: unknown) {

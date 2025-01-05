@@ -13,4 +13,5 @@ export interface Result {
 	imageUrls?: string[];
 	featureBullets?: string[];
 	gtin?: string;
+	ratingsTotal?: number;
 }

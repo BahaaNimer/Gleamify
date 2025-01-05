@@ -1,4 +1,6 @@
-import Image from "next/image";
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 interface ProductCardPropsType {
 	img: string;
@@ -14,7 +16,8 @@ export function ProductCard({
 	onClick,
 }: ProductCardPropsType) {
 	return (
-		<a
+		<Link
+			href={'#'}
 			onClick={(e) => {
 				e.preventDefault();
 				onClick?.();
@@ -26,7 +29,7 @@ export function ProductCard({
 					alt={name}
 					width={400}
 					height={400}
-					className="h-full object-contain"
+					className='h-52 object-contain'
 				/>
 			</figure>
 			<div className='card-body'>
@@ -39,6 +42,6 @@ export function ProductCard({
 					</p>
 				</div>
 			</div>
-		</a>
+		</Link>
 	);
 }

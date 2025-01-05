@@ -2,7 +2,7 @@ import { CategoryCard } from '@/app/components/categories/categoryCard';
 import subcategories from '../../mocks/tempCategory.json';
 import Link from 'next/link';
 import CategoryIntro from '@/app/components/categories/categoryIntro';
-import Breadcrumbs from '@/app/components/breadcrumb';
+import Breadcrumbs from '@/app/components/breadcrumbs';
 import graphQLClient from '@/app/lib/graphQL/graphQLClient';
 import { AmazonCategory } from '@/app/utils/types/Queries';
 import { categoryPage } from '@/app/lib/graphQL/queries';

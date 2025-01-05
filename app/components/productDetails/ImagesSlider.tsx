@@ -1,6 +1,7 @@
-import { Result } from '@/app/utils/types/Result';
-import Image from 'next/image';
 import React from 'react';
+import Image from 'next/image';
+import { Result } from '@/app/utils/types/Result';
+import Link from 'next/link';
 
 const ImagesSlider = ({
 	product,
@@ -19,8 +20,8 @@ const ImagesSlider = ({
 								className='carousel-item w-full justify-center'>
 								<Image
 									src={src}
-									className='object-contain'
-									alt={'index'}
+									className='h-auto object-contain'
+									alt={`${index}`}
 									width={300}
 									height={300}
 								/>
@@ -37,11 +38,11 @@ const ImagesSlider = ({
 							<div
 								key={index}
 								className='flex justify-center gap-2 py-2'>
-								<a
+								<Link
 									href={`#${index}`}
-									className='btn btn-xs bg-blue-500 text-white'>
+									className='btn btn-xs bg-blue-500 text-white rounded-md'>
 									{index + 1}
-								</a>
+								</Link>
 							</div>
 						);
 					}

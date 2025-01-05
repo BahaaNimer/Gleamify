@@ -1,11 +1,11 @@
 'use client';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { ProductCard } from '@/app/components/subCategories/productCard';
 import { useProductStore } from '@/app/lib/providers/products-store-provider';
 import { Result } from '@/app/utils/types/Result';
 import { useRouter } from 'next/navigation';
 import CategoryIntro from '../categories/categoryIntro';
-import Breadcrumbs from '../breadcrumb';
+import Breadcrumbs from '../breadcrumbs';
 import { AmazonProducts } from '@/app/utils/types/Queries';
 
 export default function ProductsList({
@@ -79,7 +79,10 @@ export default function ProductsList({
 				]}
 			/>
 			<CategoryIntro
-				subCategoryName='Example'
+				subCategoryName={
+					products.amazonProductCategory
+						.name
+				}
 				isProductList={true}
 			/>
 			<div className='container grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-auto'>
